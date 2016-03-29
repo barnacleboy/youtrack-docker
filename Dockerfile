@@ -19,7 +19,7 @@ RUN wget --progress=dot:mega \
 
 ADD supervisor/youtrack.conf /etc/supervisor/conf.d/youtrack.conf
 
-EXPOSE 80/tcp
+EXPOSE 8110/tcp
 
 VOLUME ["/opt/youtrack/data/", "/opt/youtrack/backup/"]
 
